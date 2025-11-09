@@ -1,7 +1,13 @@
 // Array of messages
 const messages = ["C is fun", "Python is cool", "JavaScript is amazing"];
 
-// Loop through the array and print each message
+// Initialize an empty string
+let output = "";
+
+// Loop through the array and append each message with a newline
 for (let i = 0; i < messages.length; i++) {
-    console.log(messages[i]);
+    output += messages[i] + "\n";
 }
+
+// Print all messages with a single console.log
+console.log(output.trim());
